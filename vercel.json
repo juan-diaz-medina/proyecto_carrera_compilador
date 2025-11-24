@@ -1,6 +1,6 @@
 {
   "functions": {
-    "./compile.js": {
+    "api/compile.js": {
       "maxDuration": 60
     }
   }
