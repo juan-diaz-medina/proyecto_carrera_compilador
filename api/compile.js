@@ -1,8 +1,8 @@
-const express = require('express');
-const multer = require('multer');
-const { chromium } = require('playwright-core');
-const fs = require('fs');
-const path = require('path');
+import express from 'express';
+import multer from 'multer';
+import { chromium } from 'playwright-core';
+import fs from 'fs';
+import path from 'path';
 
 const app = express();
 
@@ -103,4 +103,4 @@ app.post('/compile', upload.array('images'), async (req, res) => {
 });
 
 // Vercel espera un módulo exportado con el servidor Express
-module.exports = app;
+export default app;
