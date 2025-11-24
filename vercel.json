@@ -1,7 +1,21 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/compile.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/compile",
+      "dest": "/api/compile.js"
+    }
+  ],
   "functions": {
     "api/compile.js": {
-      "maxDuration": 60
+      "maxDuration": 120,
+      "memory": 3008
     }
   }
 }
