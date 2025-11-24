@@ -11,7 +11,7 @@ const upload = multer({ dest: '/tmp/' });
 
 const MINDAR_COMPILER_URL = 'https://hiukim.github.io/mind-ar-js-doc/tools/compile';
 
-app.post('/compile', upload.array('images'), async (req, res) => {
+app.post('/', upload.array('images'), async (req, res) => {
     let browser = null;
     let mindPath = '';
     const uploadedFilePaths = req.files ? req.files.map(f => f.path) : [];
