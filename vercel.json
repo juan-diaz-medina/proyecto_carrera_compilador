@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "./compile.js": {
+      "maxDuration": 60
+    }
+  }
+}
